@@ -1,0 +1,163 @@
+:root{
+    --text: var(#242b76);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.signin-btn, .learn-more-btn{
+    background: linear-gradient(
+        50deg,
+        rgb(150, 92, 242), 
+        rgb(255, 138, 220));
+}
+
+body{
+    background-image: url("../images/backcover.svg");
+    background-repeat: no-repeat;
+    background-position:  right bottom;
+    height: 100vh;
+    color:#3e4794;
+    font-family: 'Roboto';
+    margin-left: 3%;
+}
+
+.vector-dot + img {
+    margin-right: -3.6%;
+    width: 100%;
+    top: -10%;    
+}
+
+
+.main-div{
+    height: 100vh;
+}
+
+/*-------NAV---------*/
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img[alt="logo"]{
+    width: 120px;
+}
+
+.nav-items{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item{ 
+    font-size: 18px;   
+}
+
+.signin-btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    padding: 5px 20px;
+    margin-right: 8%;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/*--------left-section-----------*/
+
+.intro-section{
+    align-items: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section{
+    width: 28%;
+}
+
+h1{
+    font-size: 65px;
+}
+
+h4{
+    margin-bottom: 15%;
+    line-height: 2.2em;
+    font-size: 16px;
+}
+
+.learn-more-btn{
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+/*-------IMG_DIV-------------*/
+
+.imgs-div{
+    height: 90vh;
+    position: relative;
+    width: 70%;
+    z-index: -1;
+}
+
+img[alt="vector-dot"], .vector-img{
+    position: absolute;
+    bottom: -10%;
+} 
+
+img[alt="vector-dot"]{
+    margin-bottom: 10%;
+    margin-left: 6%;
+}
+
+img[alt="intro-img"]{
+    right: 0;
+    float: right;
+    width: 82%;
+    position: relative;
+}
+
+@media only screen and (max-width:1080px){
+   .nav-items{
+    display: none;
+   }
+
+   img[alt="intro-img"]{
+    display: block;
+    position: absolute;
+    top: 120px;
+    width: 400px;
+    opacity: .2;
+    z-index: -1;   }
+
+    .vector-dot, .vector-img{
+        display: none;
+    }
+
+    .intro-section{
+        justify-content: center;
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    .left-section h1{
+        font-size: 32px;
+    }
+
+    .left-section h4{
+        text-align: justify;
+    }
+}
+
